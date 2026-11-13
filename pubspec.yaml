@@ -1,0 +1,45 @@
+name: raasto
+description: "Raasto — Indian passenger, empty-return ride booking and goods transport platform."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.5.0
+  go_router: ^18.1.4
+  google_fonts: ^8.2.1
+  intl: ^0.20.2
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/branding/app_icon.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  adaptive_icon_background: "#145A43"
+  adaptive_icon_foreground: "assets/branding/app_icon_foreground.png"
+  web:
+    generate: true
+    image_path: "assets/branding/app_icon.png"
+    background_color: "#145A43"
+    theme_color: "#145A43"
+  android_12:
+    image_path: "assets/branding/app_icon.png"
+    icon_background_color: "#145A43"
+    foreground_image: "assets/branding/app_icon_foreground.png"
